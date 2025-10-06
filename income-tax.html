@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Income Tax Filing Services | DHARMBHAKTI Accounting</title>
+    <meta name="description" content="Affordable ITR filing services for salary, business, stocks, F&O. ITR-1 to ITR-4. ₹1499 onwards. Expert CA support.">
+    <!-- Include head -->
+</head>
+<body>
+    <!-- Same header -->
+    <header>...</header>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h1>Income Tax Return Filing</h1>
+            <p>We simplify tax filing for salaried individuals, traders, and business owners.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2>Our ITR Filing Plans</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th>Form</th>
+                            <th>Eligibility</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>ITR-1</strong></td>
+                            <td>Salary + Other Income (Interest, etc.)</td>
+                            <td>₹1499/-</td>
+                            <td><button class="btn btn-sm btn-primary" data-service="ITR-1">Enquire Now</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ITR-4</strong></td>
+                            <td>Business/Profession + Other Income</td>
+                            <td>₹1499/-</td>
+                            <td><button class="btn btn-sm btn-primary" data-service="ITR-4">Enquire Now</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ITR-2</strong></td>
+                            <td>Salary + Stock Market Gains + Other Income</td>
+                            <td>₹2999/-</td>
+                            <td><button class="btn btn-sm btn-primary" data-service="ITR-2">Enquire Now</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ITR-3</strong></td>
+                            <td>Salary + Stocks + F&O + Intraday + Other</td>
+                            <td>₹3499/-</td>
+                            <td><button class="btn btn-sm btn-primary" data-service="ITR-3">Enquire Now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="mt-5">Our Process</h2>
+            <ol>
+                <li>Upload documents (Form 16, P&L, Bank Statements)</li>
+                <li>Our CA reviews and prepares return</li>
+                <li>E-file with e-verification</li>
+                <li>Confirmation sent to your email</li>
+            </ol>
+
+            <h2 class="mt-5">FAQ</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                            Is ITR mandatory?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Yes, if your income exceeds ₹2.5 lakh (₹3 lakh for senior citizens).</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                            Can I file ITR-3 for trading income?
+                        </button>
+                    </h2>
+                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Yes, ITR-3 is required for F&O, intraday, and speculative income.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <div class="mt-5 p-4 border rounded bg-light">
+                <h3>Quick Inquiry</h3>
+                <form>
+                    <input type="hidden" id="inquiry-service" name="service">
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label>Phone</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>...</footer>
+
+    <!-- Scripts -->
+    <script>
+        document.querySelectorAll('[data-service]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.getElementById('inquiry-service').value = btn.getAttribute('data-service');
+            });
+        });
+    </script>
+</body>
+</html>
